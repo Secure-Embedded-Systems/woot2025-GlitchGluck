@@ -17,9 +17,9 @@ This directory contains the experimental case studies referenced in the paper:
 - `example1/`  
   Demonstrating a `buffer overflow` application on `OpenMSP430` from **Section 6.1**.
 
-- `exp2/`  
+- `example2/`  
   Demonstrating an `instruction duplication` application on `IBEX` from **Section 6.2**.
 
-- `exp3/`  
+- `example3/`  
   Demonstrating a `pin_verification_5` application on `PicoRV32` from **Section 6.3**.
 
