@@ -1,6 +1,6 @@
 ## File Descriptions 
 
-This folder simulate the fault system behavior under incorrect PIN entry conditions and generate the DSTG for analysis.
+This folder simulate the 1st fault behavior under incorrect PIN entry conditions and generate the DSTG for analysis.
 
 ### Incorrect Pin Entry
 
