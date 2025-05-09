@@ -4,8 +4,8 @@ We use Modelsim to run the simulation.
 
 ### Inputs
 
-- `tb.v`  
-  The Verilog testbench file used for simulating the processor design.
+- `ibex_testbench_gtl.sv`  
+  The testbench file used for simulating the processor design.
   
 - `document_scan`  
   Contains all the required testbench files for documenting scan state data. These files are included and instantiated within `tb.v` for simulation.
@@ -13,13 +13,13 @@ We use Modelsim to run the simulation.
 ### Outputs
 
 - `cycle_start_end_time.txt`  
-  This file contains the start and end times of cycles during the simulation. 
+  This file contains the start and end times of cycles during the simulation.
+  
+- `dut_start_end_time.txt`
+  Provides the start and end timestamps during which the Device Under Test (DUT) is actively stimulated. Used to align scan data with meaningful execution windows.
 
-- `pc.txt`  
+- `pc_reg.txt`  
   A file that stores the program counter (PC) values during the simulation.
 
 - `valuedata_Q.json`  
   Stores scan state data for each word-level register, documented per cycle, reflecting the values of registers at different points during the simulation.
-
-- `memdump.txt`  
-  Contains a snapshot of the processor's memory contents at the end of simulation. This file is used to analyze changes to memory state resulting from normal or faulted execution.
