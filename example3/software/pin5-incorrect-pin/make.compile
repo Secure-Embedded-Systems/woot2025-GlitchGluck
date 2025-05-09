@@ -1,0 +1,59 @@
+all: flash.mem ram_bank00.mem app.s
+
+ram_bank00.mem: testcase_app.hex
+	srec_cat testcase_app.hex -Vmem -fill 0x0 0x0 0x7FFF -split 4 0 -Output_block_size 1 -o ram_bank00.mem -Vmem 8
+	srec_cat testcase_app.hex -Vmem -fill 0x0 0x0 0x7FFF -split 4 1 -Output_block_size 1 -o ram_bank01.mem -Vmem 8
+	srec_cat testcase_app.hex -Vmem -fill 0x0 0x0 0x7FFF -split 4 2 -Output_block_size 1 -o ram_bank02.mem -Vmem 8
+	srec_cat testcase_app.hex -Vmem -fill 0x0 0x0 0x7FFF -split 4 3 -Output_block_size 1 -o ram_bank03.mem -Vmem 8
+
+testcase_app.hex: testcase_app.elf
+	riscv32-unknown-elf-objcopy -O verilog testcase_app.elf testcase_app.hex
+
+app.s: testcase_app.elf
+	riscv32-unknown-elf-objdump --disassemble testcase_app.elf > app.s
+
+testcase_app.elf: top.c
+	riscv32-unknown-elf-gcc \
+		-D PICOCHIP \
+		-Dmarch=rv32ic \
+		-DTRIGGERBIT=2 \
+		-Wl,-Bstatic,-T,app_sim.ld,--strip-debug,--no-warn-rwx-segment \
+		-ffreestanding \
+		-nostdlib \
+		-L .. \
+		-I ..\
+		-o testcase_app.elf \
+		start.s \
+		hal_pico.c \
+		code.c \
+		commons.h \
+		countermeasure.c \
+		initialize.c \
+		oracle.c \
+		top.c
+
+flash.mem: testcase_boot.hex
+	srec_cat testcase_boot.hex -Vmem -Output_block_size 1 -o flash.mem -Vmem 8
+
+testcase_boot.hex: testcase_boot.elf
+	riscv32-unknown-elf-objcopy -O verilog testcase_boot.elf testcase_boot.hex
+
+testcase_boot.elf: picoboot_sim.o
+	riscv32-unknown-elf-gcc picoboot_sim.o -Wl,-Bstatic,-T,bootloader.ld,--strip-debug -L .. -I .. -ffreestanding -nostdlib -o testcase_boot.elf
+	riscv32-unknown-elf-objdump --disassemble testcase_boot.elf > picoboot.s
+
+picoboot_sim.o: picoboot_sim.s
+	riscv32-unknown-elf-as picoboot_sim.s -o picoboot_sim.o
+
+localclean:
+	rm testcase_app.elf \
+	testcase_app.hex \
+	ram_bank00.mem \
+	ram_bank01.mem \
+	ram_bank02.mem \
+	ram_bank03.mem \
+	testcase_boot.hex \
+	testcase_boot.elf \
+	picoboot_sim.o \
+	flash.mem \
+	app.s

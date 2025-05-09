@@ -1,0 +1,15 @@
+digraph G {
+        node [style=rounded, penwidth=3, fontsize=20, shape=oval];
+        "7" -> "3" [label="@1, @23, @108, @121, @134", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"3" -> "3" [label="@2, @3, @9, @14, @15, @24, @30, @43, @53, @63, @73, @83, @93, @94, @95, @101, @115, @122, @123, @139, @142, @150", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"3" -> "0" [label="@4, @10, @16, @25, @33, @38, @124, @146", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0" -> "0" [label="@5, @26, @34, @35, @89, @125, @126", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0" -> "1" [label="@6, @11, @17, @27, @36, @39, @49, @59, @69, @79, @90, @98, @112, @127, @147", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"1" -> "1" [label="@7, @12, @18, @19, @20, @28, @40, @41, @45, @50, @51, @55, @60, @61, @65, @70, @71, @75, @80, @81, @85, @91, @99, @103, @104, @105, @110, @113, @117, @128, @129, @130, @131, @136, @137, @144, @148, @152, @153, @154", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"1" -> "3" [label="@8, @13, @21, @29, @32, @37, @42, @46, @52, @56, @62, @66, @72, @76, @82, @86, @92, @100, @106, @114, @118, @132, @138, @141, @145, @149, @155", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"3" -> "7" [label="@22, @47, @57, @67, @77, @87, @107, @119, @133", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"3" -> "1" [label="@31, @44, @54, @64, @74, @84, @96, @102, @109, @116, @135, @140, @143, @151", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"7" -> "0" [label="@48 + 10*n, n=0..4", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"1" -> "0" [label="@97 + 14*n, n=0..1", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"7" -> "7" [label="@120", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+}

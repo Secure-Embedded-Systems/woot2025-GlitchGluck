@@ -1,0 +1,16 @@
+digraph G {
+        node [style=rounded, penwidth=3, fontsize=20, shape=oval];
+        "b" -> "a" [label="@764, @771, @781, @791, @801, @811, @821, @831, @841, @851, @861, @871, @881, @891, @901, @911, @921, @933, @943, @953, @973, @978, @983, @988, @993, @998", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"a" -> "b" [label="@765, @772, @782, @792, @802, @812, @822, @832, @842, @852, @862, @872, @882, @892, @902, @912, @922, @934, @944, @954, @999", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"b" -> "6" [label="@766, @962, @964, @969", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"6" -> "b" [label="@767, @777, @787, @797, @807, @817, @827, @837, @847, @857, @867, @877, @887, @897, @907, @917, @929, @939, @949, @959, @963, @965, @968", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"b" -> "8" [label="@768, @778, @788, @798, @808, @818, @828, @838, @848, @858, @868, @878, @888, @898, @908, @918, @930, @940, @950", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"8" -> "9" [label="@769, @779, @789, @799, @809, @819, @829, @839, @849, @859, @869, @879, @889, @899, @909, @919, @931, @941, @951, @971, @976, @981, @986, @991, @996", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"9" -> "b" [label="@770, @780, @790, @800, @810, @820, @830, @840, @850, @860, @870, @880, @890, @900, @910, @920, @932, @942, @952, @972, @977, @982, @987, @992, @997", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"b" -> "b" [label="@773, @774, @783, @784, @793, @794, @803, @804, @813, @814, @823, @824, @833, @834, @843, @844, @853, @854, @863, @864, @873, @874, @883, @884, @893, @894, @903, @904, @913, @914, @923, @924, @925, @926, @935, @936, @945, @946, @955, @956", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"b" -> "c" [label="@775, @785, @795, @805, @815, @825, @835, @845, @855, @865, @875, @885, @895, @905, @915, @927, @937, @947, @957, @960, @966", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"c" -> "6" [label="@776, @786, @796, @806, @816, @826, @836, @846, @856, @866, @876, @886, @896, @906, @916, @928, @938, @948, @958, @967", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"c" -> "b" [label="@961", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"6" -> "8" [label="@970 + 5*n, n=0..5", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"a" -> "6" [label="@974 + 5*n, n=0..4", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+}

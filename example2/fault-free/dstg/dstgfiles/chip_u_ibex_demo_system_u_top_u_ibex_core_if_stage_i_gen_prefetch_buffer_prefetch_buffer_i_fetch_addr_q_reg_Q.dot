@@ -1,0 +1,13 @@
+digraph G {
+        node [style=rounded, penwidth=3, fontsize=20, shape=oval];
+        "05c0" -> "05c4" [label="@20", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"05c4" -> "05c8" [label="@21", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"05c8" -> "05c8" [label="@22", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"05c8" -> "05cc" [label="@23", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"05cc" -> "05cc" [label="@24", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"05cc" -> "04a4" [label="@25", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"04a4" -> "04a8" [label="@26", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"04a8" -> "04ac" [label="@27", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"04ac" -> "04b0" [label="@28", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"04b0" -> "04b4" [label="@29", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+}

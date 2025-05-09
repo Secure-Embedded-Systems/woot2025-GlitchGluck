@@ -1,0 +1,31 @@
+all: ram_bank00.mem app.s
+
+ram_bank00.mem: testcase_app.bin
+	xxd -c 4 -p testcase_app.bin | sed 's/^\(..\)\(..\)\(..\)\(..\)$$/\4\3\2\1/' > ram_bank00.mem
+
+testcase_app.bin: testcase_app.elf
+	riscv32-unknown-elf-objcopy -O binary testcase_app.elf testcase_app.bin
+
+app.s: testcase_app.elf
+	riscv32-unknown-elf-objdump --disassemble testcase_app.elf > app.s
+
+testcase_app.elf: top.c
+	riscv32-unknown-elf-gcc \
+		-D IBEX \
+		-Dmarch=rv32imc \
+		-DTRIGGERBIT=2 \
+		-Wl,-Bstatic,-T,link.ld,--strip-debug,--no-warn-rwx-segment \
+		-ffreestanding \
+		-nostdlib \
+		-L .. \
+		-I ..\
+		-o testcase_app.elf \
+		crt0.s \
+		hal_ibex.c \
+		top.c
+
+localclean:
+	rm testcase_app.elf \
+	testcase_app.bin \
+	ram_bank00.mem \
+	app.s

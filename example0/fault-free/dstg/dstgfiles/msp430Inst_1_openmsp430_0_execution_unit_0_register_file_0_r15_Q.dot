@@ -1,0 +1,8 @@
+digraph G {
+        node [style=rounded, penwidth=3, fontsize=20, shape=oval];
+        "0214" -> "0214" [label="@764 + 1*n, n=0..3", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0214" -> "0041" [label="@768", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0041" -> "0041" [label="@769 + 1*n, n=0..148", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0041" -> "0000" [label="@918", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0000" -> "0000" [label="@919 + 1*n, n=0..7", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+}

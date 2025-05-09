@@ -1,0 +1,215 @@
+
+app.elf:     file format elf32-msp430
+
+SYMBOL TABLE:
+0000fffe l    d  __reset_vector	00000000 __reset_vector
+0000f000 l    d  .rodata	00000000 .rodata
+0000f004 l    d  .text	00000000 .text
+00000200 l    d  .data	00000000 .data
+00000200 l    d  .bss	00000000 .bss
+00000214 l    d  .noinit	00000000 .noinit
+00000000 l    d  .MP430.attributes	00000000 .MP430.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 /home/zliu12/capri6/msp430-gcc-9.3.1.11_linux64/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/lib/430/crt0.o
+0000fffe l       __reset_vector	00000000 __msp430_resetvec_hook
+00000000 l    df *ABS*	00000000 crt_bss.o
+00000000 l    df *ABS*	00000000 crt_main.o
+00000000 l    df *ABS*	00000000 crt_callexit.o
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 lib_a-strcpy.o
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 lib_a-memset.o
+0000f090 g     F .text	00000010 strcpy
+0000f01c g     F .text	00000004 __crt0_call_exit
+0000f004 g     F .text	00000004 __crt0_start
+0000f008 g     F .text	0000000e __crt0_init_bss
+00000014 g       *ABS*	00000000 __bsssize
+00000214 g       .noinit	00000000 end
+0000f004 g       .text	00000000 _start
+00000000  w      *ABS*	00000000 __rom_highdatacopysize
+0000f0a2 g     F .text	00000014 memset
+0000f04a g     F .text	00000046 main
+00000000  w      *ABS*	00000000 __high_bsssize
+00000000  w      *ABS*	00000000 __rom_highdatastart
+0000f020 g     F .text	0000002a hello_world
+00000000  w      *ABS*	00000000 __high_datastart
+00000000  w      *ABS*	00000000 __upper_data_init
+00000200 g       .bss	00000000 __bssstart
+00001200 g       .noinit	00000000 __stack
+00000200 g     O .bss	00000014 large_string
+00000200 g       .data	00000000 _edata
+0000f0a0  w    F .text	00000004 exit
+00000000  w      *ABS*	00000000 __high_bssstart
+0000f016 g     F .text	00000006 __crt0_call_main
+0000f0a0  w    F .text	00000004 _exit
+
+
+
+Disassembly of section .text:
+
+0000f004 <__crt0_start>:
+    f004:	31 40 00 12 	mov	#4608,	r1	;#0x1200
+
+0000f008 <__crt0_init_bss>:
+    f008:	3c 40 00 02 	mov	#512,	r12	;#0x0200
+
+0000f00c <.Loc.76.1>:
+    f00c:	0d 43       	clr	r13		;
+
+0000f00e <.Loc.77.1>:
+    f00e:	3e 40 14 00 	mov	#20,	r14	;#0x0014
+
+0000f012 <.Loc.81.1>:
+    f012:	b0 12 a2 f0 	call	#-3934		;#0xf0a2
+
+0000f016 <__crt0_call_main>:
+    f016:	0c 43       	clr	r12		;
+
+0000f018 <.Loc.254.1>:
+    f018:	b0 12 4a f0 	call	#-4022		;#0xf04a
+
+0000f01c <__crt0_call_exit>:
+    f01c:	b0 12 a0 f0 	call	#-3936		;#0xf0a0
+
+0000f020 <hello_world>:
+#include <string.h>
+#include <stdio.h>
+
+
+void hello_world(void) {
+    memcpy((uint8_t *)0x200, "hello world!", 12);
+    f020:	3c 40 00 02 	mov	#512,	r12	;#0x0200
+    f024:	bc 40 68 65 	mov	#25960,	0(r12)	;#0x6568
+    f028:	00 00 
+    f02a:	bc 40 6c 6c 	mov	#27756,	2(r12)	;#0x6c6c
+    f02e:	02 00 
+    f030:	bc 40 6f 20 	mov	#8303,	4(r12)	;#0x206f
+    f034:	04 00 
+    f036:	bc 40 77 6f 	mov	#28535,	6(r12)	;#0x6f77
+    f03a:	06 00 
+    f03c:	bc 40 72 6c 	mov	#27762,	8(r12)	;#0x6c72
+    f040:	08 00 
+    f042:	bc 40 64 21 	mov	#8548,	10(r12)	;#0x2164, 0x000a
+    f046:	0a 00 
+
+0000f048 <.L2>:
+    while(1);
+    f048:	ff 3f       	jmp	$+0      	;abs 0xf048
+
+0000f04a <main>:
+}
+
+char large_string[20];
+
+int main() {
+    f04a:	31 80 10 00 	sub	#16,	r1	;#0x0010
+
+0000f04e <.LCFI0>:
+  WDTCTL = WDTPW | WDTHOLD;
+    f04e:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    f052:	20 01 
+
+0000f054 <.LVL0>:
+  char buffer[16];
+  int i;
+  for( i = 0; i < 15; i++)
+    f054:	3c 40 00 02 	mov	#512,	r12	;#0x0200
+    f058:	3d 40 0f 02 	mov	#527,	r13	;#0x020f
+
+0000f05c <.L4>:
+    large_string[i] = 'A';
+    f05c:	fc 40 41 00 	mov.b	#65,	0(r12)	;#0x0041
+    f060:	00 00 
+    f062:	1c 53       	inc	r12		;
+
+0000f064 <.Loc.18.1>:
+  for( i = 0; i < 15; i++)
+    f064:	0c 9d       	cmp	r13,	r12	;
+    f066:	fa 23       	jnz	$-10     	;abs 0xf05c
+
+0000f068 <.Loc.20.1>:
+  large_string[15] = '\0';
+    f068:	3c 40 00 02 	mov	#512,	r12	;#0x0200
+
+0000f06c <.LVL3>:
+    f06c:	cc 43 0f 00 	mov.b	#0,	15(r12)	;r3 As==00, 0x000f
+
+0000f070 <.Loc.22.1>:
+  //large_string[16] = 'B';
+  large_string[16] = 0x20;
+    f070:	fc 40 20 00 	mov.b	#32,	16(r12)	;#0x0020, 0x0010
+    f074:	10 00 
+
+0000f076 <.Loc.23.1>:
+  large_string[17] = 0xf0;
+    f076:	fc 40 f0 ff 	mov.b	#-16,	17(r12)	;#0xfff0, 0x0011
+    f07a:	11 00 
+
+0000f07c <.Loc.24.1>:
+  large_string[18] = '\0';
+    f07c:	cc 43 12 00 	mov.b	#0,	18(r12)	;r3 As==00, 0x0012
+
+0000f080 <.Loc.26.1>:
+
+  strcpy(buffer,large_string);
+    f080:	0d 4c       	mov	r12,	r13	;
+    f082:	0c 41       	mov	r1,	r12	;
+    f084:	b0 12 90 f0 	call	#-3952		;#0xf090
+
+0000f088 <.LVL4>:
+  
+  return 0;
+}
+    f088:	4c 43       	clr.b	r12		;
+    f08a:	31 50 10 00 	add	#16,	r1	;#0x0010
+
+0000f08e <.LCFI1>:
+    f08e:	30 41       	ret			
+
+0000f090 <strcpy>:
+    f090:	0e 4c       	mov	r12,	r14	;
+
+0000f092 <L0^A>:
+    f092:	7f 4d       	mov.b	@r13+,	r15	;
+
+0000f094 <.LVL3>:
+    f094:	ce 4f 00 00 	mov.b	r15,	0(r14)	;
+    f098:	1e 53       	inc	r14		;
+
+0000f09a <.Loc.68.1>:
+    f09a:	0f 93       	cmp	#0,	r15	;r3 As==00
+    f09c:	fa 23       	jnz	$-10     	;abs 0xf092
+
+0000f09e <.Loc.99.1>:
+    f09e:	30 41       	ret			
+
+0000f0a0 <_exit>:
+    f0a0:	ff 3f       	jmp	$+0      	;abs 0xf0a0
+
+0000f0a2 <memset>:
+    f0a2:	0e 5c       	add	r12,	r14	;
+
+0000f0a4 <L0^A>:
+    f0a4:	0f 4c       	mov	r12,	r15	;
+
+0000f0a6 <.L2>:
+    f0a6:	0f 9e       	cmp	r14,	r15	;
+    f0a8:	01 20       	jnz	$+4      	;abs 0xf0ac
+
+0000f0aa <.Loc.104.1>:
+    f0aa:	30 41       	ret			
+
+0000f0ac <.L3>:
+    f0ac:	1f 53       	inc	r15		;
+
+0000f0ae <.LVL4>:
+    f0ae:	cf 4d ff ff 	mov.b	r13,	-1(r15)	; 0xffff
+    f0b2:	f9 3f       	jmp	$-12     	;abs 0xf0a6

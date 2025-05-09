@@ -1,0 +1,16 @@
+digraph G {
+        node [style=rounded, penwidth=3, fontsize=20, shape=oval];
+        "0012" -> "0012" [label="@764 + 1*n, n=0..4", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0012" -> "0000" [label="@769", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0000" -> "0000" [label="@770 + 1*n, n=0..205", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0000" -> "0002" [label="@976", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0002" -> "0002" [label="@977 + 1*n, n=0..3", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0002" -> "0004" [label="@981", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0004" -> "0004" [label="@982 + 1*n, n=0..3", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0004" -> "0006" [label="@986", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0006" -> "0006" [label="@987 + 1*n, n=0..3", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0006" -> "0008" [label="@991", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0008" -> "0008" [label="@992 + 1*n, n=0..3", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0008" -> "000a" [label="@996", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"000a" -> "000a" [label="@997 + 1*n, n=0..2", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+}

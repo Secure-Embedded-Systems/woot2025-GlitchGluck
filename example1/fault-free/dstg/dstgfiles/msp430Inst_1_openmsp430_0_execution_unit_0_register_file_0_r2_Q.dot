@@ -1,0 +1,16 @@
+digraph G {
+        node [style=rounded, penwidth=3, fontsize=20, shape=oval];
+        "3" -> "3" [label="@764, @765, @766, @915, @916, @917", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"3" -> "0" [label="@767", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0" -> "0" [label="@768, @769, @776, @777, @784, @785, @792, @793, @800, @801, @808, @809, @816, @817, @824, @825, @832, @833, @840, @841, @848, @849, @856, @857, @864, @865, @872, @873, @880, @881, @888, @889, @896, @897, @904, @905, @912, @913", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0" -> "1" [label="@770 + 8*n, n=0..16", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"1" -> "1" [label="@771, @772, @773, @774, @779, @780, @781, @782, @787, @788, @789, @790, @795, @796, @797, @798, @803, @804, @805, @806, @811, @812, @813, @814, @819, @820, @821, @822, @827, @828, @829, @830, @835, @836, @837, @838, @843, @844, @845, @846, @851, @852, @853, @854, @859, @860, @861, @862, @867, @868, @869, @870, @875, @876, @877, @878, @883, @884, @885, @886, @891, @892, @893, @894, @899, @900, @901, @902, @919, @920, @921, @922, @923, @924", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"1" -> "0" [label="@775 + 8*n, n=0..16", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0" -> "5" [label="@906", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"5" -> "5" [label="@907 + 1*n, n=0..3", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"5" -> "0" [label="@911", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0" -> "3" [label="@914", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"3" -> "1" [label="@918", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"1" -> "4" [label="@925", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"4" -> "4" [label="@926 + 1*n, n=0..73", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+}

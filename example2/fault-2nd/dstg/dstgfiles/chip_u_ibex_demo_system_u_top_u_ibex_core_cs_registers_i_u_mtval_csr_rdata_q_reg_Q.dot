@@ -1,0 +1,4 @@
+digraph G {
+        node [style=rounded, penwidth=3, fontsize=20, shape=oval];
+        "00000000" -> "00000000" [label="@1 + 1*n, n=0..99", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+}

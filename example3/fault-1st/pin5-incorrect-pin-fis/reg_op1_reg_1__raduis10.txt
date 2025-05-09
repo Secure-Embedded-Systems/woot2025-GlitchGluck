@@ -1,0 +1,4 @@
+Registers within 10 distance from reg_op1_reg_1_:
+picosocInst_cpu.decoded_imm_reg_16_, 1420.92, 3340.6, 7.86
+picosocInst_cpu.decoded_imm_reg_30_, 1420.92, 3340.6, 7.86
+picosocInst_cpu.reg_op1_reg_1_, 1421.48, 3348.44, 0.00

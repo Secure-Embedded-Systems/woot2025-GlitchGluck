@@ -1,0 +1,18 @@
+digraph G {
+        node [style=rounded, penwidth=3, fontsize=20, shape=oval];
+        "0020" -> "0020" [label="@764 + 1*n, n=0..3", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0020" -> "4141" [label="@768", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"4141" -> "4141" [label="@769 + 1*n, n=0..138", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"4141" -> "0041" [label="@908", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0041" -> "0041" [label="@909 + 1*n, n=0..8", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0041" -> "0000" [label="@918", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0000" -> "0000" [label="@919, @920, @921, @922, @923, @924, @925, @926, @927, @928, @929, @951, @952, @953, @954, @955, @956, @957, @958, @959", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0000" -> "f020" [label="@930", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"f020" -> "f020" [label="@931, @932, @933, @934, @935, @936, @937, @938, @939, @967, @968, @969, @970, @971, @972, @973, @974, @975, @976, @977, @978, @979, @980, @981, @982, @983, @984, @985, @986, @987, @988, @989, @990, @991, @992, @993, @994, @995, @996, @997, @998, @999", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"f020" -> "f0f0" [label="@940", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"f0f0" -> "f0f0" [label="@941 + 1*n, n=0..8", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"f0f0" -> "0000" [label="@950", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0000" -> "f088" [label="@960", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"f088" -> "f088" [label="@961 + 1*n, n=0..4", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"f088" -> "f020" [label="@966", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+}

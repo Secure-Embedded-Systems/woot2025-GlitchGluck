@@ -1,0 +1,2 @@
+Registers within 10 distance from reg_op1_reg_2_:
+picosocInst_cpu.reg_op1_reg_2_, 1420.92, 3567.96, 0.00

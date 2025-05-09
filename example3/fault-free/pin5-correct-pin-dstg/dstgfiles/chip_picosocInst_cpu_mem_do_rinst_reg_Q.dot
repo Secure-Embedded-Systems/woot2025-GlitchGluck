@@ -1,0 +1,7 @@
+digraph G {
+        node [style=rounded, penwidth=3, fontsize=20, shape=oval];
+        "0" -> "0" [label="@606, @610, @611, @612, @613", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0" -> "1" [label="@607 + 7*n, n=0..1", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"1" -> "1" [label="@608", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"1" -> "0" [label="@609", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+}

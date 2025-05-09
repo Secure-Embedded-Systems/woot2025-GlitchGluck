@@ -1,0 +1,10 @@
+digraph G {
+        node [style=rounded, penwidth=3, fontsize=20, shape=oval];
+        "4" -> "4" [label="@764, @773, @783, @793, @803, @813, @823, @833, @843, @853, @863, @873, @883, @893, @903, @913, @923", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"4" -> "3" [label="@765", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"3" -> "3" [label="@766, @767, @768, @769, @770, @771, @777, @778, @779, @780, @781, @787, @788, @789, @790, @791, @797, @798, @799, @800, @801, @807, @808, @809, @810, @811, @817, @818, @819, @820, @821, @827, @828, @829, @830, @831, @837, @838, @839, @840, @841, @847, @848, @849, @850, @851, @857, @858, @859, @860, @861, @867, @868, @869, @870, @871, @877, @878, @879, @880, @881, @887, @888, @889, @890, @891, @897, @898, @899, @900, @901, @907, @908, @909, @910, @911, @917, @918, @919, @920, @921", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"3" -> "4" [label="@772 + 10*n, n=0..15", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"4" -> "0" [label="@774 + 10*n, n=0..15", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0" -> "0" [label="@775, @785, @795, @805, @815, @825, @835, @845, @855, @865, @875, @885, @895, @905, @915, @925, @926", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+"0" -> "3" [label="@776 + 10*n, n=0..14", color=black,arrowsize=1,style=bold,penwidth=3,fontsize=20];
+}
