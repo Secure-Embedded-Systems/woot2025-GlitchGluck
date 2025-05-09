@@ -5,7 +5,7 @@ This directory contains the scan chain configuration before and after the physic
 ### Scan Chain Configuration
 
 - `scan-chain.def`  
-  Describes the scan chain configuration, including the order and mapping of flip-flops in the scan path. This file is essential for interpreting both scan-in and scan-out data at the bit level.
+  Describes the scan chain configuration, including the order and mapping of flip-flops in the scan path. This file is for interpreting both scan-in and scan-out data at the bit level.
 
 ### Input
 
