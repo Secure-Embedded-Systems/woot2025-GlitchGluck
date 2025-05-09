@@ -2,7 +2,7 @@
 
 This example is used in **Section 6.3**.
 
-This application is executed on the `IBEX` processor core.
+The software application is executed on the `IBEX` processor core.
 
 
 *Note: We do not release the gate-level netlist.*
