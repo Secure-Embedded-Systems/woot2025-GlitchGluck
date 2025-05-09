@@ -20,3 +20,6 @@ We use Modelsim to run the simulation.
 
 - `valuedata_Q.json`  
   Stores scan state data for each word-level register, documented per cycle, reflecting the values of registers at different points during the simulation.
+
+- `memdump.txt`  
+  Contains a snapshot of the processor's memory contents at the end of simulation. This file is used to analyze changes to memory state resulting from normal or faulted execution.
