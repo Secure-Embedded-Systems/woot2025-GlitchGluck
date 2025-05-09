@@ -8,7 +8,7 @@ This folder simulate the fault-free system behavior under correct and incorrect 
   Includes the simulation data for the correct PIN entry scenario.
 
 - `pin5-correct-pin-dstg/`  
-  Contains the Dynamic State Transition Graph (DSTG) results for the correct PIN entry.
+  Contains the Dynamic State Transition Graphs (DSTGs) for the correct PIN entry.
 
 ### Incorrect Pin Entry
 
@@ -16,7 +16,7 @@ This folder simulate the fault-free system behavior under correct and incorrect 
   Includes the simulation data for the incorrect PIN entry scenario.
 
 - `pin5-incorrect-pin-dstg/`  
-  Contains the DSTG results for the incorrect PIN entry.
+  Contains the DSTGs for the incorrect PIN entry.
 
 - `pin5-incorrect-pin-fis/`  
   Documents the Fault Injection State (FIS) derived from the incorrect PIN experiment.
