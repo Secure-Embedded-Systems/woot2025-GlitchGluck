@@ -8,7 +8,7 @@ The software application is executed on the `PicoRV32` processor core.
 *Note: We do not release the gate-level netlist.*
 
 - `software/`  
-  Contains the software applications that run on the processor during simulation. This includes the instruction duplication example described in **Section 6.4**.
+  Contains the software applications that run on the processor during simulation. This includes the pin verification 5 example described in **Section 6.4**.
 
 - `fault-free/`  
   Contains the fault-free simulation setup. This folder includes scan state documentation and the construction of the Dynamic State Transition Graph (DSTG).
