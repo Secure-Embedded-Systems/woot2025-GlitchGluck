@@ -1,5 +1,7 @@
 ## Folder Descriptions
 
+This example is used in **Section 5**.
+
 *Note: We do not release the gate-level netlist.*
 
 - `software/`  
