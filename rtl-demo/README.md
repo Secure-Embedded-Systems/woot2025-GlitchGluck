@@ -1,4 +1,4 @@
-## Folder Descriptions (inside `rtl-demo/`)
+## Folder Descriptions
 
 - `software/`  
   Contains the software applications that run on the processor during simulation.
