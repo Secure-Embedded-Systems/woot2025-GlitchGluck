@@ -27,5 +27,5 @@ dotty example.dot
 ### Output
 
 - `dstgfiles`  
-  Contains files related to the Dynamic State Transition Graph (DSTG), including output data and any related resources for DSTG analysis.
+  Contains the generated Dynamic State Transition Graphs (DSTGs).
 
