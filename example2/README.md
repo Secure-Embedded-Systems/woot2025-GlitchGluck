@@ -8,7 +8,7 @@ This example is used in **Section 6.3**.
   Contains the software applications that run on the processor during simulation. This includes the instruction duplication example described in **Section 6.3**.
 
 - `fault-free/`  
-  Contains the fault-free simulation setup. This folder includes scan state documentation and the construction of the Dynamic State Transition Graph (DSTG), as explained in **Section 6.3**.
+  Contains the fault-free simulation setup. This folder includes scan state documentation and the construction of the Dynamic State Transition Graph (DSTG).
 
 - `fault-1st/`  
   Contains results from the first injected fault experiment. This folder captures the processor response and scan state after injecting a fault at a selected cycle.
