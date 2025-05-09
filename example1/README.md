@@ -2,7 +2,7 @@
 
 This example is used in **Section 6.2**.
 
-This application is executed on the `OpenMSP430` processor core.
+The software application is executed on the `OpenMSP430` processor core.
 
 *Note: We do not release the gate-level netlist.*
 
