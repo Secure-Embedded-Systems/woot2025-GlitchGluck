@@ -9,9 +9,3 @@ This folder simulate the 1st and 2nd fault behavior under incorrect PIN entry co
 
 - `pin5-incorrect-pin-dstg/`  
   Contains the DSTGs for the incorrect PIN entry.
-
-- `pin5-incorrect-pin-fis/`  
-  Documents the Fault Injection State (FIS) derived from the incorrect PIN experiment.
-
-- `pin5-incorrect-pin-fit/`  
-  Stores the Fault Injection Time (FIT), identifying the critical time point for fault injection under incorrect PIN input.
