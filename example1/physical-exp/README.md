@@ -1,6 +1,6 @@
 ## File Descriptions
 
-This directory contains the scan chain configuration and simulation outputs associated with the fault-free setup. These files support analyzing scan input/output behavior and assist in aligning scan data to fault injection or DSTG cycles.
+This directory contains the scan chain configuration before and after the physical attack.
 
 ### Scan Chain Configuration
 
@@ -10,7 +10,7 @@ This directory contains the scan chain configuration and simulation outputs asso
 ### Input
 
 - `scanin/`  
-  Contains the scan-in scan state obtained during the fault-free simulation.
+  Contains the scan-in scan state obtained during the fault-free simulation. This data is prepared to set up the processor for the attack.
 
 ### Fault-Free Output
 
