@@ -11,7 +11,7 @@ This example is used in **Section 6.3**.
   Contains the fault-free simulation setup. This folder includes scan state documentation and the construction of the Dynamic State Transition Graph (DSTG).
 
 - `fault-1st/`  
-  Contains results from the first injected fault experiment. 
+  Contains the fault tesbench and results from the first injected fault experiment. 
 
 - `fault-2nd/`  
-  Contains results from the second injected fault experiment. 
+  Contains the fault tesbench and results from the second injected fault experiment. 
