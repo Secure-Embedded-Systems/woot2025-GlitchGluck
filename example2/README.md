@@ -5,10 +5,10 @@ This example is used in **Section 6.3**.
 *Note: We do not release the gate-level netlist.*
 
 - `software/`  
-  Contains the software applications that run on the processor during simulation. This folder includes a buffer overflow vulnerability code.
+  Contains the software applications that run on the processor during simulation. This includes the buffer overflow vulnerability example described in **Section 6.3**.
 
 - `fault-free/`  
-  Holds the fault-free simulation setup. This directory documents the scan state data and illustrates how the Dynamic State Transition Graph (DSTG) is constructed from the scan state data.
+  Contains the fault-free simulation setup. This folder includes scan state documentation and the construction of the Dynamic State Transition Graph (DSTG), as explained in **Section 6.3**.
 
 - `fault-1st/`  
   Contains results from the first injected fault experiment. This folder captures the processor response and scan state after injecting a fault at a selected cycle.
