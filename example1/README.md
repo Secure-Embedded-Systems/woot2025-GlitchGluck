@@ -12,4 +12,4 @@
   Contains the fault simulation setup using the identified attack parameters. This includes simulation results showing how injected faults influence system behavior.
 
 - `physical-exp/`  
-  Contains data and results from physical fault injection experiments that support the simulation-based findings and help validate fault model accuracy.
+  Contains data and results from physical fault injection experiments that support the simulation-based findings and help validate fault parameters accuracy.
