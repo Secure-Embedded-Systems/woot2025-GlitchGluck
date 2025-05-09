@@ -9,9 +9,10 @@
   A Verilog file that lists all the testbench files to be included in the simulation.
 
 - `tb.v`  
-  The Verilog testbench file used for simulating the processor design. 
+  The Verilog testbench file used for simulating the processor design.
+  
 - `document_scan`  
-  This file likely contains documentation or metadata related to the scan states observed during the fault-free simulation.
+  This folder contains needed testbench files for document scan state data .
 
 ### Outputs
 
