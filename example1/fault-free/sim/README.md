@@ -1,25 +1,22 @@
 ## File Descriptions 
 
-We use Modelsim to run the simulation.
+This example evaluates the system behavior under correct and incorrect PIN entry conditions using simulation and DSTG analysis.
 
-### Inputs
+- `pin5-correct-pin-sim/`  
+  Includes the simulation data for the correct PIN entry scenario.
 
-- `tb.v`  
-  The Verilog testbench file used for simulating the processor design.
-  
-- `document_scan`  
-  Contains all the required testbench files for documenting scan state data. These files are included and instantiated within `tb.v` for simulation.
+- `pin5-correct-pin-dstg/`  
+  Contains the Dynamic State Transition Graph (DSTG) results for the correct PIN entry.
 
-### Outputs
+- `pin5-incorrect-pin-sim/`  
+  Includes the simulation data for the incorrect PIN entry scenario.
 
-- `cycle_start_end_time.txt`  
-  This file contains the start and end times of cycles during the simulation. 
+- `pin5-incorrect-pin-dstg/`  
+  Contains the DSTG results for the incorrect PIN entry.
 
-- `pc.txt`  
-  A file that stores the program counter (PC) values during the simulation.
+- `pin5-incorrect-pin-fis/`  
+  Documents the Fault Injection State (FIS) data derived from the incorrect PIN experiment.
 
-- `valuedata_Q.json`  
-  Stores scan state data for each word-level register, documented per cycle, reflecting the values of registers at different points during the simulation.
+- `pin5-incorrect-pin-fit/`  
+  Stores the Fault Injection Time (FIT) data, identifying the critical time point for fault injection under incorrect PIN input.
 
-- `memdump.txt`  
-  Contains a snapshot of the processor's memory contents at the end of simulation. This file is used to analyze changes to memory state resulting from normal or faulted execution.
