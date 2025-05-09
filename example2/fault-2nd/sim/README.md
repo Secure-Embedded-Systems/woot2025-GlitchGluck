@@ -5,7 +5,7 @@ We use Modelsim to run the simulation.
 ### Inputs
 
 - `ibex_testbench_gtl.sv`  
-  The testbench file used for simulating the processor design.
+  The testbench file used for simulating the processor design. Fault is injected inside of the testbench.
   
 - `document_scan`  
   Contains all the required testbench files for documenting scan state data. These files are included and instantiated within `tb.v` for simulation.
