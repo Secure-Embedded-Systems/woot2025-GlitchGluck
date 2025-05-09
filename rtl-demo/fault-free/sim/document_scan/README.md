@@ -4,7 +4,7 @@
   Documents the scan state in binary, representing all flip-flop bits during the simulation.
 
 - `valuetree_decl.v`  
-  Declares the word-level register representation for the processor.
+  Declares the ID number for each word-level register.
 
 - `valuetree_Q_id.v`  
   Documents the ID number for each word-level register, providing a unique identifier for each register.
