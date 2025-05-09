@@ -4,21 +4,22 @@ This repository contains the files and results of the experiments in GlitchGlüc
 ## References
 Z. Liu, D, Shanmugam and P. Schaumont, “GlitchGlück: Enabling Software Vulnerabilities through Guided Hardware Fault Injection”.
 
-## Experiments
+## Directory Overview
 
 This directory contains the experimental case studies referenced in the paper:
 
-- `rtl-demo/`
-  This folder provides an RTL-level walkthrough demonstrating how to document scan states within a simulation testbench and how to generate the Dynamic State Transition Graph (DSTG).
+- `rtl-demo/`  
+  Provides an RTL-level walkthrough demonstrating how to document scan states within a simulation testbench and how to generate the Dynamic State Transition Graph (DSTG).  
+  *Note: This is an RTL-only demonstration. The gate-level netlist cannot be released.*
 
 - `example0/`  
   Walkthrough example described in **Section 5** of the paper.
 
 - `example1/`  
-  MSP430 case from **Section 6.1**, demonstrating a buffer overflow scenario.
+  Uses the OpenMSP430 core from **Section 6.1**, demonstrating a `buffer overflow` application.
 
 - `exp2/`  
-  IBEX core example from **Section 6.2**, showcasing instruction duplication.
+  IBEX core example from **Section 6.2**, showcasing `instruction duplication`.
 
 - `exp3/`  
   PicoRV32 core example from **Section 6.3**, based on the `pin_verification_5` benchmark.
