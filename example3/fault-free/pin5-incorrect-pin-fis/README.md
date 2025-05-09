@@ -1,4 +1,4 @@
-### Laser Radius Impact Data
+### Laser Radius Impact Using Layout Data
 
 These files document the results of laser fault injection experiments centered on specific registers (`reg_op1_reg_0`, `reg_op1_reg_1`, `reg_op1_reg_2`) with a laser spot radius of 10 units. Each file lists all the registers affected within that radius.
 
