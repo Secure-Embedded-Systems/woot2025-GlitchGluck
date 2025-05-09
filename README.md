@@ -4,12 +4,12 @@ This repository contains the files and results of the experiments in GlitchGlüc
 ## References
 Z. Liu, D, Shanmugam and P. Schaumont, “GlitchGlück: Enabling Software Vulnerabilities through Guided Hardware Fault Injection”.
 
-## `rtl-demo`
-This folder provides an RTL-level walkthrough demonstrating how to document scan states within a simulation testbench and how to generate the Dynamic State Transition Graph (DSTG).
-
 ## Experiments
 
 This directory contains the experimental case studies referenced in the paper:
+
+- `rtl-demo/`
+  This folder provides an RTL-level walkthrough demonstrating how to document scan states within a simulation testbench and how to generate the Dynamic State Transition Graph (DSTG).
 
 - `example0/`  
   Walkthrough example described in **Section 5** of the paper.
