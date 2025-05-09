@@ -4,7 +4,7 @@ We use Modelsim to run the simulation.
 
 ### Inputs
 
-- `ibex_testbench_gtl.sv`  
+- `pico_testbench_gtl.v`  
   The testbench file used for simulating the processor design.
   
 - `document_scan`  
