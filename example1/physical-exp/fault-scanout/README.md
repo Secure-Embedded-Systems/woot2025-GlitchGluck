@@ -10,5 +10,5 @@ This directory contains scan-out results collected from the chip during physical
 - `map_sout_6dot1ns.txt`  
 - `map_sout_10dot7ns.txt`  
 
-Each file contains scan-out data collected at a specific glitch width (e.g., `1.6ns`, `2.7ns`, etc.). These results are used to evaluate the impact of fault injection under different timing conditions and compare the outcomes with fault-free simulation data.
+Each file contains scan-out data collected at a specific glitch width (e.g., `1.6ns`, `2.7ns`, `5.0ns`, `6.1ns`, `10.7ns`). These results are used to evaluate the impact of fault injection under different timing conditions and compare the outcomes with fault-free simulation data.
 
