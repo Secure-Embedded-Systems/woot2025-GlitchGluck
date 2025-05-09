@@ -1,5 +1,7 @@
 ## File Descriptions 
 
+We use Modelsim to run the simulation.
+
 ### Inputs
 
 - `filelist.v`  
