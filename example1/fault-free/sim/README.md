@@ -15,8 +15,8 @@ This example evaluates the system behavior under correct and incorrect PIN entry
   Contains the DSTG results for the incorrect PIN entry.
 
 - `pin5-incorrect-pin-fis/`  
-  Documents the Fault Injection State (FIS) data derived from the incorrect PIN experiment.
+  Documents the Fault Injection State (FIS) derived from the incorrect PIN experiment.
 
 - `pin5-incorrect-pin-fit/`  
-  Stores the Fault Injection Time (FIT) data, identifying the critical time point for fault injection under incorrect PIN input.
+  Stores the Fault Injection Time (FIT), identifying the critical time point for fault injection under incorrect PIN input.
 
