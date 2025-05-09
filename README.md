@@ -15,11 +15,11 @@ This directory contains the experimental case studies referenced in the paper:
   Walkthrough example described in **Section 5** of the paper.
 
 - `example1/`  
-  Uses the OpenMSP430 core from **Section 6.1**, demonstrating a `buffer overflow` application.
+  Demonstrating a `buffer overflow` application on OpenMSP430 from **Section 6.1**.
 
 - `exp2/`  
-  IBEX core example from **Section 6.2**, showcasing `instruction duplication`.
+  Demonstrating an `instruction duplication` application on IBEX from **Section 6.2**.
 
 - `exp3/`  
-  PicoRV32 core example from **Section 6.3**, based on the `pin_verification_5` benchmark.
+  Demonstrating a `pin_verification_5` application on PicoRV32 from **Section 6.3**.
 
