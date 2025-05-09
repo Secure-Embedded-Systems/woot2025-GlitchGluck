@@ -11,7 +11,7 @@ This example is used in **Section 6.3**.
   Contains the fault-free simulation setup. This folder includes scan state documentation and the construction of the Dynamic State Transition Graph (DSTG).
 
 - `fault-1st/`  
-  Contains the fault tesbench and results from the first injected fault experiment. 
+  Contains the fault testbench and results from the first injected fault experiment. This setup introduces a single fault into the simulation and captures its effect on processor behavior.
 
 - `fault-2nd/`  
-  Contains the fault tesbench and results from the second injected fault experiment. Including the first fault.
+  Contains the fault testbench and results from the second injected fault experiment. This setup includes both the first fault and an additional second fault, allowing analysis of compound fault effects.
