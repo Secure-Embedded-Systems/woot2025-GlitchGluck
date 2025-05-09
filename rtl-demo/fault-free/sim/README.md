@@ -12,7 +12,7 @@
   The Verilog testbench file used for simulating the processor design.
   
 - `document_scan`  
-  This folder contains needed testbench files for document scan state data .
+  Contains all the required testbench files for documenting scan state data. These files are included and instantiated within `tb.v` for simulation.
 
 ### Outputs
 
