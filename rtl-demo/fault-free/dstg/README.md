@@ -7,4 +7,5 @@ We use Dotty to visualize the DSTGs. To install Dotty, run the following command
 ```bash
 sudo apt-get update
 sudo apt-get install graphviz
-```bash
+
+Once installed, you can visualize a `.dot` file by running:
