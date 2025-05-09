@@ -22,7 +22,8 @@ dotty example.dot
 ### Script
 
 - `gen_dstg.py`  
-  A Python script used for generating the Dynamic State Transition Graph (DSTG) based on simulation data. It processes the scan state documentation to create the DSTG representation.
+  A Python script used for generating the Dynamic State Transition Graph (DSTG) based on simulation data. It processes the scan state documentation to create the DSTG representation. The script allows you to choose the plotting window, the start and end cycles for the DSTG generation.
+
 
 ### Output
 
