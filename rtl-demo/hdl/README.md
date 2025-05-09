@@ -1,4 +1,4 @@
-## Folder Descriptions (inside `rtl-demo/hdl/`)
+## Folder Descriptions 
 
 - `msp430core/`  
   Contains the ASIC design files for a single-core OpenMSP430 processor, including peripherals.  
