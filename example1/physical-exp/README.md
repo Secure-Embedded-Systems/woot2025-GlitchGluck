@@ -19,5 +19,5 @@ This directory contains the scan chain configuration before and after the physic
 
 ### Physical Experiment Output
 
-- `physical-exp/`  
+- `fault-scanout/`  
   Includes scan-out data collected from the chip during physical experiments. This is used to compare hardware behavior against fault-free simulation results.
