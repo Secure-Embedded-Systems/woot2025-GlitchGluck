@@ -1,11 +1,10 @@
-## Folder Descriptions
+## Folder Descriptions (inside `rtl-demo/`)
 
 - `software/`  
-  Contains the software applications used in each experiment. These are the programs executed on the target cores (e.g., buffer overflow, pin verification).
+  Contains the software applications used to exercise the processor during simulation (e.g., test programs that trigger specific behaviors).
 
 - `hdl/`  
-  Includes the RTL descriptions of the processor cores used in the experiments (e.g., OpenMSP430, IBEX, PicoRV32).
+  Includes the RTL design files of the target processor core used for this walkthrough.
 
 - `fault-free/`  
-  Contains the fault-free simulation environment. This includes documentation of scan state data and the process for constructing the Dynamic State Transition Graph (DSTG).
-
+  Holds the fault-free simulation setup. This directory documents the scan state data and illustrates how the Dynamic State Transition Graph (DSTG) is constructed from a clean execution trace.
