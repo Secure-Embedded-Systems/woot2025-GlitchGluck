@@ -14,4 +14,4 @@ This example is used in **Section 6.3**.
   Contains the fault tesbench and results from the first injected fault experiment. 
 
 - `fault-2nd/`  
-  Contains the fault tesbench and results from the second injected fault experiment. 
+  Contains the fault tesbench and results from the second injected fault experiment. Including the first fault.
