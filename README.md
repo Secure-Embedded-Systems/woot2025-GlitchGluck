@@ -10,7 +10,6 @@ This directory contains the experimental case studies referenced in the paper:
 
 - `rtl-demo/`  
   Provides an RTL-level walkthrough demonstrating how to document scan states within a simulation testbench and how to generate the Dynamic State Transition Graph (DSTG).  
-  *Note: This is an RTL-only demonstration. The gate-level netlist cannot be released.*
 
 - `example0/`  
   Walkthrough example described in **Section 5** of the paper.
