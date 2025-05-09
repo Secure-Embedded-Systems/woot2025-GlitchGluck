@@ -1,5 +1,7 @@
 ## File Descriptions 
 
+### Inputs
+
 - `filelist.v`  
   A Verilog file that includes a list of all ASIC Verilog files to be included in the simulation.
 
@@ -11,6 +13,8 @@
 
 - `document_scan`  
   This file likely contains documentation or metadata related to the scan states observed during the fault-free simulation.
+
+### Outputs
 
 - `cycle_start_end_time.txt`  
   This file contains the start and end times of cycles during the simulation. It might track when certain processes or operations begin and end in the simulation, which is useful for debugging and analysis.
