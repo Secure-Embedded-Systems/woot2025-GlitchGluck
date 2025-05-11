@@ -2,7 +2,7 @@
 This repository contains the files and results of the experiments in GlitchGlück paper at WOOT 2025.
 
 ## References
-Z. Liu, D, Shanmugam and P. Schaumont, “GlitchGlück: Enabling Software Vulnerabilities through Guided Hardware Fault Injection”. Submitted to WOOT 2025.
+Z. Liu, D, Shanmugam and P. Schaumont, “GlitchGlück: Enabling Software Vulnerabilities through Guided Hardware Fault Injection”. Submitted to 19th USENIX WOOT Conference on Offensive Technologies, 2025.
 
 ## Directory Overview
 
