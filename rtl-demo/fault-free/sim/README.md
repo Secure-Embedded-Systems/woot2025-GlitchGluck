@@ -16,6 +16,10 @@ We use Modelsim to run the simulation.
 - `document_scan`  
   Contains all the required testbench files for documenting scan state data. These files are included and instantiated within `tb.v` for simulation.
 
+- `dofiles`  
+  Simulation do files.
+
+
 ### Outputs
 
 - `cycle_start_end_time.txt`  
