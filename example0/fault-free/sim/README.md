@@ -10,8 +10,9 @@ We use Modelsim to run the simulation.
 - `document_scan`  
   Contains all the required testbench files for documenting scan state data. These files are included and instantiated within `tb.v` for simulation.
 
-- `dofiles`
-  simulation do files.
+- `dofiles`  
+  Simulation do files.
+
 
 ### Outputs
 
