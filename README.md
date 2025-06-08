@@ -1,5 +1,6 @@
 # GlitchGlück  
 This repository contains the files and results of the experiments in GlitchGlück paper at WOOT 2025.
+This project is licensed under the Apache License 2.0.
 
 ## References
 Z. Liu, D, Shanmugam and P. Schaumont, “GlitchGlück: Enabling Software Vulnerabilities through Guided Hardware Fault Injection”. Accepted at 19th USENIX WOOT Conference on Offensive Technologies, 2025.
