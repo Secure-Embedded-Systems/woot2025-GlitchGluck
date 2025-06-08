@@ -23,3 +23,10 @@ This directory contains the experimental case studies referenced in the paper:
 - `example3/`  
   Demonstrating a `pin_verification_5` application on `PicoRV32` from **Section 6.4**.
 
+- `Dockerfile`
+  To set up a virtual environment with all tool requirements, you can use the Dockerfile. Inside of the virtual machine, the examples are available under `/woot2025-GlitchGLuck`.
+
+```
+docker build . -f Dockerfile -t woot2025-GlitchGluck
+docker run --rm -it woot2025-GlitchGluck
+```
