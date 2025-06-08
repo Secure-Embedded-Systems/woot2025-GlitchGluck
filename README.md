@@ -27,6 +27,6 @@ This directory contains the experimental case studies referenced in the paper:
   To set up a virtual environment with all tool requirements, you can use the Dockerfile. Inside of the virtual machine, the examples are available under `/woot2025-GlitchGLuck`.
 
 ```
-docker build . -f Dockerfile -t woot2025-GlitchGluck
-docker run --rm -it woot2025-GlitchGluck
+docker build . -f Dockerfile -t glitchgluck
+docker run --rm -it glitchgluck
 ```
